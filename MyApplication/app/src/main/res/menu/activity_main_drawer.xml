@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bluetooth"
+            android:icon="@drawable/ic_speedometer"
+            android:title="Pair to BlueTooth" />
+        <item
+            android:id="@+id/nav_speedometer_dash"
+            android:icon="@drawable/ic_speedometer"
+            android:title="Speedometer Dash" />
+        <item
+            android:id="@+id/nav_temperature_dash"
+            android:icon="@drawable/ic_temperature"
+            android:title="Temperature Dash" />
+        <item
+            android:id="@+id/nav_steering_dash"
+            android:icon="@drawable/ic_steering"
+            android:title="Steering Dash" />
+        <item
+            android:id="@+id/nav_battery_dash"
+            android:icon="@drawable/ic_battery"
+            android:title="Battery Dash" />
+        <item
+            android:id="@+id/nav_postracesummary_dash"
+            android:icon="@drawable/ic_postracesummary"
+            android:title="Post-Race Summary" />
+    </group>
+
+</menu>

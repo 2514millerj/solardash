@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:text="Temperature Dashboard" />
+
+    <TextView
+        android:id="@+id/temp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:text="Sensor 1:" />
+
+    <ImageView
+        android:id="@+id/temp1image"
+        android:layout_width="59dp"
+        android:layout_height="36dp"
+        android:src="@drawable/thermometer_green"
+        android:layout_gravity="right"
+        />
+
+
+    <TextView
+        android:id="@+id/temp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Sensor 2:" />
+
+    <ImageView
+        android:id="@+id/temp2image"
+        android:layout_width="59dp"
+        android:layout_height="36dp"
+        android:src="@drawable/thermometer_red"
+        android:layout_gravity="right"
+        />
+
+    <TextView
+        android:id="@+id/temp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:text="Sensor 3:" />
+
+    <ImageView
+        android:id="@+id/temp3image"
+        android:layout_width="59dp"
+        android:layout_height="36dp"
+        android:src="@drawable/thermometer_yellow"
+        android:layout_gravity="right"
+        />
+
+</LinearLayout>
