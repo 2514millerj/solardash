@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_bluetooth"
-            android:icon="@drawable/ic_speedometer"
+            android:icon="@drawable/ic_bluetooth"
             android:title="Pair to BlueTooth" />
         <item
             android:id="@+id/nav_speedometer_dash"
@@ -22,6 +22,10 @@
             android:id="@+id/nav_battery_dash"
             android:icon="@drawable/ic_battery"
             android:title="Battery Dash" />
+        <item
+            android:id="@+id/nav_voltage"
+            android:icon="@drawable/ic_voltage"
+            android:title="Voltage" />
         <item
             android:id="@+id/nav_postracesummary_dash"
             android:icon="@drawable/ic_postracesummary"

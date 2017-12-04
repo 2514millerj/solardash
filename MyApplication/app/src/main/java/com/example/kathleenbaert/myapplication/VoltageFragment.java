@@ -17,20 +17,20 @@ import android.widget.TextView;
  * Created by kathleenbaert on 11/1/17.
  */
 
-public class BatteryFragment extends Fragment {
+public class VoltageFragment extends Fragment {
 
     View myView;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.battery_dash, container, false);
+        myView = inflater.inflate(R.layout.voltage_dash, container, false);
 
         final Context context = myView.getContext();
 
         final JSONData d = new JSONData();
 
-        TextView firstVolt = myView.findViewById(R.id.volt1);
-        firstVolt.setText("Voltage: " + Double.toString( d.dataInstance.getVoltage() ) );
+        TextView firstAmp = myView.findViewById(R.id.volt1);
+        firstAmp.setText("Amps: " + Double.toString( d.dataInstance.getAmps() ) );
 
         final Button voltButton1 = myView.findViewById( R.id.voltButton1);
 
@@ -42,15 +42,24 @@ public class BatteryFragment extends Fragment {
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
 
                 // set title
-                alertDialogBuilder.setTitle("Sensor 1 Voltage Recent Activity");
+                alertDialogBuilder.setTitle("Sensor 1 Amps Recent Activity");
 
-                double [] voltageArray = d.dataInstance.getVoltageArray();
+                double [] ampsArray = d.dataInstance.getAmpsArray();
                 String message = "";
-                for (int i = 0; i < voltageArray.length; i++) {
-                    message += ("\n" + voltageArray[i]);
+                for (int i = 0; i < ampsArray.length; i++) {
+                    message += ("\n" + ampsArray[i]);
                 }
+
+
                 alertDialogBuilder.setMessage(message);
+
+
+
+
+                // create alert dialog
                 AlertDialog alertDialog = alertDialogBuilder.create();
+
+                // show it
                 alertDialog.show();
             }
         });

@@ -10,4 +10,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
         android:text="Steering Dashboard" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="Placeholder of Where to Display Steering Controls"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

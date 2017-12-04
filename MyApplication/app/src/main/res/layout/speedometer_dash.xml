@@ -12,29 +12,12 @@
         android:layout_marginTop="60dp"
         android:text="Speedometer Dashboard" />
 
-    <ImageView
-        android:id="@+id/spedometer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:maxWidth="182dp"
-        android:maxHeight="182dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/spedometer"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
-        android:text="Graphs/useful info"
-        android:layout_below="@+id/spedometer"
+        android:text="Placeholder of Where to Display Current Speed"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
